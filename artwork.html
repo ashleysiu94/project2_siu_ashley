@@ -9,20 +9,101 @@
 
 		<link type="text/css" rel="stylesheet" href="styles.css" />
 
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Muli&display=swap" rel="stylesheet">
-		
+		<link rel="icon" type="image/ico" href="images/favicon.ico" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Muli&display=swap" rel="stylesheet">
+
+		<!-- Lightbox -->
+		<link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	</head>
 
 	<body>
+		<header>
 
+			<!-- Mobile -->
+			<div class="mobile-header-container">
+				<a href="index.html"><img id="mobile-logo" src="images/logo.png" alt="Ashley Siu logo" title="Ashley Siu logo"></a>
 
+				<button class="hamburger">&#9776;</button>
+				<button class="cross">&#735;</button>
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="tvnews.html">tv news</a></li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="artwork.html">artwork</a></li>
+					<li><a href="about.html">about</a></li>
+				</ul>
+			</nav>
+
+			<!-- Desktop -->
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="tvnews.html">tvnews</a></li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="index.html"><img id="logo" src="images/logo.png" alt="Ashley Siu logo" title="Ashley Siu logo"></a></li>
+					<li><a href="artwork.html">artwork</a></li>
+					<li><a href="about.html">about</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="artwork-main">
+			<section class="titlebar" id="artwork-titlebar">
+				<h1 class="hidden-heading">Hidden Heading</h1>
+				<div class="overlay-titlebar">
+					<div class="titlebar-container">
+						<h1>Artwork</h1>
+						<p>A gallery of recent paintings & drawings.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="artwork-content">
+				<h1 class="hidden-heading">Hidden Heading</h1>
+				<a href="images/art/hourglass.png" data-lightbox="gallery" data-title="Nature turns into cityscape over time. Watercolor and pen. 2/28/20."><img src="images/art/hourglass.png" alt="Nature Over Time" title="Nature Over Time" /></a>
+
+				<a href="images/art/fox.png" data-lightbox="gallery" data-title="Happy fox. Acrylic and paper. 1/22/20."><img src="images/art/fox.png" alt="Happy Fox" title="Happy Fox" /></a>
+
+				<a href="images/art/wolf.png" data-lightbox="gallery" data-title="Wolf behind tree. Inspired by the Of Monsters and Men song 'Crystals.' Acrylic and paper. 4/26/19."><img src="images/art/wolf.png" alt="Wolf" title="Wolf" /></a>
+
+				<a href="images/art/figurepainting.png" data-lightbox="gallery" data-title="Figure painting. Watercolor. 11/15/18."><img src="images/art/figurepainting.png" alt="Figure Painting" title="Figure Painting" /></a>
+
+				<a href="images/art/myrtlebeach.png" data-lightbox="gallery" data-title="Sunrise in Myrtle Beach. Oil painting. 7/15/18."><img src="images/art/myrtlebeach.png" alt="Myrtle Beach" title="Myrtle Beach" /></a>
+
+				<a href="images/art/landsend2.png" data-lightbox="gallery" data-title="Golden Gate Bridge from Lands End in San Francisco. Oil painting. 1/26/18."><img src="images/art/landsend2.png" alt="Lands End" title="Lands End" /></a>
+
+				<a href="images/art/dancer.png" data-lightbox="gallery" data-title="Dancer in motion. Oil painting. 9/14/15."><img src="images/art/dancer.png" alt="Dancer" title="Dancer" /></a>
+
+				<a href="images/art/memphis.png" data-lightbox="gallery" data-title="Down by the Mississippi River. Painted view from WREG-TV traffic camera. Oil painting. 8/14/15."><img src="images/art/memphis.png" alt="Memphis" title="Memphis" /></a>
+			</section>
+
+		</main>
+
+		<footer>
+			<div class="footer-icons">
+				<a href="https://twitter.com/ash_siu" target="_blank"><img class="twitter" src="images/twitter.png" alt="Twitter" title="Twitter" /></a>
+				<a href="https://www.linkedin.com/in/ashleysiu/" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a>
+				<a href="https://www.instagram.com/ash_siu/" target="_blank"><img class="instagram" src="images/instagram.png" alt="Instagram" title="Instagram" /></a>
+				<a href="mailto:ashley.c.siu@gmail.com"><img class="mail" src="images/email.png" alt="Mail" title="Mail" /></a>
+			</div>
+		</footer>
+
+		<!-- JavaScript -->
+		<script src="js/hamburger.js"></script>
+		<script src="lightbox/src/js/lightbox.js"></script>
 	</body>
 
 </html>

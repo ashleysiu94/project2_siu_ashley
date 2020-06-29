@@ -614,3 +614,74 @@ aside {
 }
 
 /***** END RESUME MIN-WIDTH 800PX *****/
+
+/* =============================================
+
+										ARTWORK
+
+============================================= */
+
+#artwork-titlebar {
+	background-image: url('images/artwork-background.png');
+}
+
+#artwork-titlebar p {
+	max-width: 225px;
+}
+
+.artwork-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px 10px 30px 10px;
+}
+
+.artwork-content a {
+	padding: 0 0 30px 0;
+}
+
+.artwork-content img {
+	width: 100%;
+	max-width: 250px;
+}
+
+/***** START ARTWORK MIN-WIDTH 500PX *****/
+
+@media (min-width: 500px) {
+	.artwork-content {
+		justify-content: space-around;
+	}
+}
+
+/***** END ARTWORK MIN-WIDTH 500PX *****/
+
+/***** START ARTWORK MIN-WIDTH 800PX *****/
+
+@media (min-width: 800px) {
+	.artwork-main {
+		display: flex;
+	}
+
+	.artwork-content {
+		max-width: 70%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	.artwork-content a {
+		padding: 10px;
+	}
+}
+
+/***** END ARTWORK MIN-WIDTH 800PX *****/
+
+/***** START ARTWORK MIN-WIDTH 950PX *****/
+
+@media (min-width: 950px) {
+	.artwork-content img {
+		max-width: 300px;
+	}
+}
+
+/***** END ARTWORK MIN-WIDTH 950PX *****/
