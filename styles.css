@@ -1,0 +1,616 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/* =============================================
+
+			BODY, HEADER & FOOTER, OVERLAY TEMPLATE
+
+============================================= */
+
+body {
+	background-color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	background-color: #f3f3f3;
+	height: 70px;
+}
+
+.mobile-header-container {
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+}
+
+header a {
+	padding: 15px 0 0 10%;
+}
+
+#mobile-logo {
+	max-width: 150px;
+}
+
+/***** START HAMBURGER NAV *****/
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+	padding: 10px 10% 0 0;
+  color:#7f8084;
+  border:0;
+  font-size:2.5em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+	padding: 10px 11% 0 0;
+  color:#7f8084;
+  border:0;
+  font-size:5em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; width:100%; background:#f1f1f1;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#7f8084;}
+.menu ul li a:hover {  color: #227ebb; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.menu ul li {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+/**** END HAMBURGER NAV *****/
+
+
+nav ul {
+	list-style-type: none;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.desktop-menu ul li {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.75rem;
+	padding: 0 3%;
+}
+
+#logo {
+	max-width: 150px;
+}
+
+nav ul li a {
+	color: #7f8084;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #227ebb;
+	text-decoration:none;
+}
+
+p {
+	font-family: 'Muli', sans-serif;
+	color: #f3f3f3;
+}
+
+main {
+	flex: 1;
+	height: 80vh;
+	background-color: #252525;
+}
+
+.overlay {
+	background-color: rgba(34, 113, 187, .7);
+	width: 100%;
+	height: 80vh;
+}
+
+footer {
+	background-color: #f3f3f3;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-icons img {
+	height: 50px;
+	padding: 0 1em;
+}
+
+/***** HIDDEN HEADING FOR ACCESSIBILTY *****/
+.hidden-heading {
+	display: none;
+}
+
+/* =============================================
+
+											INDEX
+
+============================================= */
+
+.index-main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.home-section {
+	background-image: url('images/indexmobile-background.jpg');
+	background-position: center;
+	background-size: cover;
+	min-height: 450px;
+	height: 80vh;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 450px;
+	height: 80vh;
+}
+
+.home-container figure {
+	width: 100%;
+}
+
+#one {
+	order: 2;
+	padding: 1%;
+}
+
+#two {
+	order: 1;
+}
+
+#three {
+	order: 3;
+}
+
+#four {
+	display: none;
+}
+
+.home-section img {
+	border-radius: 50%;
+	width: 50%;
+  animation: twirl 2.5s 1 forwards ease-out;
+}
+
+@keyframes twirl {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.home-section p {
+	font-size: 2rem;
+ 	filter: drop-shadow(1px 3px 1px black);
+}
+
+/***** START INDEX MIN-WIDTH 500PX *****/
+
+@media (min-width: 500px) {
+	.home-section img {
+		max-width: 350px;
+	}
+
+	.footer-icons img {
+		padding: 0 2em;
+	}
+}
+
+/***** END INDEX MIN-WIDTH 500PX *****/
+
+/***** START INDEX MIN-WIDTH 800PX *****/
+
+@media (min-width: 800px) {
+	#mobile-logo, .menu, .hamburger, .cross, .mobile-header-container {
+		display: none;
+	}
+
+ 	header {
+		display: inline-block;
+	}
+
+	.desktop-menu {
+		display: block;
+		padding: 1%;
+	}
+
+	.desktop-menu ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding-top: 5px;
+	}
+
+	.home-section {
+		background-image: url('images/indexdesktop-background.jpg');
+		background-position: center;
+		background-size: cover;
+		height: 80vh;
+	}
+
+	.home-container p {
+		display: inline;
+	}
+
+	#one {
+		order: 1;
+	}
+
+	#two, #three {
+		display: none;
+	}
+
+	#four {
+		display: block;
+		order: 2;
+	}
+
+	.footer-icons img {
+		padding: 0 3em;
+	}
+}
+
+/***** END INDEX MIN-WIDTH 800PX *****/
+
+/***** START INDEX MIN-WIDTH 1600PX *****/
+
+@media (min-width: 1600px) {
+	body {
+		margin: 0 auto;
+		max-width: 1600px;
+	}
+}
+
+/***** END INDEX MIN-WIDTH 1600PX *****/
+
+/* =============================================
+
+										TV NEWS
+
+============================================= */
+
+.tvnews-main {
+	display: flex;
+	flex-direction: column;
+}
+
+#tvnews-titlebar {
+	background-image: url('images/tvnews-background.png');
+	width: 100%;
+}
+
+.titlebar {
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	flex-basis: 20em;
+}
+
+.overlay-titlebar {
+	background-color: rgba(34, 113, 187, .7);
+	width: 100%;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.titlebar-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: #f3f3f3;
+}
+
+.titlebar p {
+	font-size: 1.2rem;
+	max-width: 200px
+}
+
+.tvnews-content {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #f3f3f3;
+}
+
+.tvnews-content h2 {
+	padding: 2%;
+}
+
+figure {
+	width: 100%;
+	padding: 25px 0;
+	text-align: center;
+}
+
+iframe {
+	width: 256px;
+	height: 144px;
+	padding: 2%;
+}
+
+figcaption {
+	font-family: 'Muli', sans-serif;
+	color: #f3f3f3;
+}
+
+/***** START TVNEWS MIN-WIDTH 500PX *****/
+
+@media (min-width: 500px) {
+	iframe {
+		width: 426px;
+		height: 240px;
+	}
+}
+
+/***** END TVNEWS MIN-WIDTH 500PX *****/
+
+/***** START TVNEWS MIN-WIDTH 700PX *****/
+
+@media (min-width: 700px) {
+	iframe {
+		width: 640px;
+		height: 360px;
+	}
+}
+
+/***** END TVNEWS MIN-WIDTH 700PX *****/
+
+/***** START TVNEWS MIN-WIDTH 800PX *****/
+
+@media (min-width: 800px) {
+	.tvnews-main {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.overlay-titlebar {
+		background-color: rgba(34, 113, 187, .7);
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.titlebar-container {
+		display: block;
+		padding-top: 25%;
+	}
+
+	.titlebar-container p {
+		max-width: 270px;
+	}
+
+	.tvnews-content {
+		display: flex;
+		max-width: 70%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	figure {
+		width: 50%;
+	}
+
+	iframe {
+		width: 256px;
+		height: 144px;
+		padding: 2px;
+	}
+}
+
+/***** END TVNEWS MIN-WIDTH 800PX *****/
+
+/***** START TVNEWS MIN-WIDTH 1200PX *****/
+
+@media (min-width: 1200px) {
+	iframe {
+		width: 426px;
+		height: 240px;
+	}
+}
+
+/***** END TVNEWS MIN-WIDTH 1200PX *****/
+
+/* =============================================
+
+										RESUME
+
+============================================= */
+
+#resume-titlebar {
+	background-image: url('images/resume-background.png');
+	background-position: left;
+}
+
+.resume-download {
+	background-color: #f3f3f3;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.resume-download a p {
+	font-family: 'Muli', sans-serif;
+	color: black;
+	font-size: 1rem;
+}
+
+.resume-download a {
+	text-decoration: none;
+}
+
+.resume-download a p:hover {
+	color: #227ebb;
+}
+
+.resume-content {
+	min-width: 350px;
+}
+
+.resume-content article {
+	padding: 1%;
+}
+
+.resume-content article h2 {
+	padding-top: 10px;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+.resume-item {
+	padding: 10px;
+}
+
+.resume-item h3 {
+	font-family: 'Muli', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #f3f3f3;
+	padding-bottom: 3px;
+}
+
+.desktop-resume-item {
+	display: none;
+}
+
+.resume-item ul {
+	padding: 5px 0 0 25px;
+}
+
+.resume-item ul li {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #f3f3f3;
+	padding-bottom: 2px;
+}
+
+aside {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+	color: #f3f3f3;
+	padding: 10px 0 10px 5px;
+}
+
+/***** START RESUME MIN-WIDTH 500PX *****/
+
+@media (min-width: 500px) {
+	.resume-content article {
+		padding: 1% 5%;
+	}
+}
+
+/***** END RESUME MIN-WIDTH 500PX *****/
+
+/***** START RESUME MIN-WIDTH 800PX *****/
+
+@media (min-width: 800px) {
+	.resume-main {
+		display: flex;
+	}
+
+	.resume-download {
+		width: 150px;
+    margin: auto;
+    margin-top: 10px;
+	}
+
+	.resume-content {
+		max-width: 70%;
+		padding-top: 2%;
+		padding-bottom: 10px;
+		margin: 0 auto;
+	}
+
+	.resume-container {
+		display: flex;
+	}
+
+	.resume-content article {
+    padding: 1% 2%;
+}
+
+	.resume-content article h2 {
+		text-align: left;
+	}
+
+	.mobile-resume-item {
+		display: none;
+	}
+
+	.desktop-resume-item {
+		display: block;
+	}
+
+	.resume-item ul {
+	    padding: 5px 0 0 15px;
+	}
+
+	#resume-titlebar {
+		background-position: right;
+	}
+
+}
+
+/***** END RESUME MIN-WIDTH 800PX *****/
