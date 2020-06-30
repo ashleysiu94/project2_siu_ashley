@@ -9,8 +9,7 @@
 
 		<link type="text/css" rel="stylesheet" href="styles.css" />
 
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Muli&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/ico" href="images/favicon.ico" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,11 +17,91 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+				<!-- Google Fonts -->
+				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Muli&display=swap" rel="stylesheet">
+
+				<!-- JQuery -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	</head>
 
 	<body>
+		<header>
 
+			<!-- Mobile -->
+			<div class="mobile-header-container">
+				<a href="index.html"><img id="mobile-logo" src="images/logo.png" alt="Ashley Siu logo" title="Ashley Siu logo"></a>
 
+				<button class="hamburger">&#9776;</button>
+				<button class="cross">&#735;</button>
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="tvnews.html">tv news</a></li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="artwork.html">artwork</a></li>
+					<li><a href="about.html">about</a></li>
+				</ul>
+			</nav>
+
+			<!-- Desktop -->
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="tvnews.html">tvnews</a></li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="index.html"><img id="logo" src="images/logo.png" alt="Ashley Siu logo" title="Ashley Siu logo"></a></li>
+					<li><a href="artwork.html">artwork</a></li>
+					<li><a href="about.html">about</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="about-main">
+			<section class="titlebar" id="about-titlebar">
+				<h1 class="hidden-heading">Hidden Heading</h1>
+				<div class="overlay-titlebar">
+					<div class="titlebar-container">
+						<h1>About</h1>
+						<img src="images/about-profilepic.png" alt="Ashley Siu" title="Ashley Siu">
+					</div>
+				</div>
+			</section>
+
+			<section class="about-content">
+				<h1 class="hidden-heading">Hidden Heading</h1>
+				<article class="bio">
+					<h2>Hello, I'm Ashley!</h2>
+					<p>Ashley Siu is a television news producer and artist based in San Francisco, California.</p>
+					<p>Ashley has been producing local morning newscasts since graduating from Syracuse University in 2015. Her journalism career has taken her across the country, from Tennessee to her home state of California. Ashley has experience covering breaking news, including wall-to-wall coverage of the 2017 Northern California wildfires. She is known for her fast writing and problem solving skills in the newsroom.</p>
+					<p>When Ashley is not at work, she is often painting. She hopes to turn her hobby into a career. Ashley grew up taking drawing and painting lessons. She is currently accepting commissions.</p>
+					<p>Ashley is also studying for her Master's degree online. She is working towards a M.A. in Mass Communication with specialization in Web Design through the University of Florida. This mobile responsive website was built from scratch as part of her HTML/CSS coding class.</p>
+				</article>
+
+				<div class="contactform">
+          <h2>Contact Me</h2>
+          <form id="form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+            <input type="text" name="req_name" placeholder="First & Last Name" id="name" />
+            <input type="email" name="req_email" placeholder="Email Address" id="email" />
+	          <input type="text" name="req_subject" placeholder="Subject" id="subject" />
+	          <textarea name="req_message" placeholder="Your message here!" rows="14" id="message"></textarea>
+            <input id="submitbutton" type="submit" value="Send" />
+          </form>
+        </div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-icons">
+				<a href="https://twitter.com/ash_siu" target="_blank"><img class="twitter" src="images/twitter.png" alt="Twitter" title="Twitter" /></a>
+				<a href="https://www.linkedin.com/in/ashleysiu/" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a>
+				<a href="https://www.instagram.com/ash_siu/" target="_blank"><img class="instagram" src="images/instagram.png" alt="Instagram" title="Instagram" /></a>
+				<a href="mailto:ashley.c.siu@gmail.com"><img class="mail" src="images/email.png" alt="Mail" title="Mail" /></a>
+			</div>
+		</footer>
+
+		<!-- JavaScript -->
+		<script src="js/hamburger.js"></script>
 	</body>
 
 </html>

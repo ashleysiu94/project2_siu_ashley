@@ -685,3 +685,119 @@ aside {
 }
 
 /***** END ARTWORK MIN-WIDTH 950PX *****/
+
+/* =============================================
+
+											ABOUT
+
+============================================= */
+
+#about-titlebar {
+	background-image: url('images/about-background.png');
+}
+
+#about-titlebar img {
+	width: 100px;
+	border-radius: 45%;
+}
+
+.about-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-content h2 {
+	padding: .75rem 0;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+.bio {
+	padding: 1% 5% 30px 5%;
+}
+
+.bio p {
+	padding: .5rem 0;
+	font-size: 1rem;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#form input, textarea {
+	width: 96%;
+	font-family: 'Muli', sans-serif;
+	font-size: 1rem;
+	padding: 2%;
+	margin: 2% 0;
+}
+
+#form #submitbutton {
+	width: 131px;
+	background-color: #f3f3f3;
+	margin: 10px 0 30px 0;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 1rem;
+}
+
+#submitbutton:hover {
+	color: #227ebb;
+}
+
+/***** START ABOUT MIN-WIDTH 500PX *****/
+
+@media (min-width: 500px) {
+	#form {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+/***** END ABOUT MIN-WIDTH 500PX *****/
+
+/***** START ABOUT MIN-WIDTH 800PX *****/
+
+@media (min-width: 800px) {
+	#about-titlebar {
+		background-position: right;
+	}
+
+	#about-titlebar img {
+		width: 75%;
+	}
+
+	.about-main {
+		display: flex;
+	}
+
+	.about-content {
+		max-width: 70%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	.about-content h2 {
+		text-align: left;
+	}
+
+	.contactform {
+		padding: 1% 5% 30px 5%;
+	}
+
+	#form {
+		margin: 0;
+		max-width: 1000px;
+	}
+
+	#form input, textarea {
+		margin: 10px;
+		padding: 10px;
+	}
+}
+
+/***** END ABOUT MIN-WIDTH 800PX *****/
