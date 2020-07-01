@@ -119,6 +119,10 @@ nav ul li a:hover {
 	text-decoration:none;
 }
 
+.currentpage {
+	color: #227ebb;
+}
+
 p {
 	font-family: 'Muli', sans-serif;
 	color: #f3f3f3;
@@ -382,38 +386,20 @@ figure {
 	text-align: center;
 }
 
+.mediaWrapper {
+	margin: 0 auto;
+}
+
 iframe {
-	width: 256px;
-	height: 144px;
-	padding: 2%;
+	width: 640px;
+	height: 360px;
 }
 
 figcaption {
 	font-family: 'Muli', sans-serif;
 	color: #f3f3f3;
+	padding: 2%;
 }
-
-/***** START TVNEWS MIN-WIDTH 500PX *****/
-
-@media (min-width: 500px) {
-	iframe {
-		width: 426px;
-		height: 240px;
-	}
-}
-
-/***** END TVNEWS MIN-WIDTH 500PX *****/
-
-/***** START TVNEWS MIN-WIDTH 700PX *****/
-
-@media (min-width: 700px) {
-	iframe {
-		width: 640px;
-		height: 360px;
-	}
-}
-
-/***** END TVNEWS MIN-WIDTH 700PX *****/
 
 /***** START TVNEWS MIN-WIDTH 800PX *****/
 
@@ -451,26 +437,7 @@ figcaption {
 	figure {
 		width: 50%;
 	}
-
-	iframe {
-		width: 256px;
-		height: 144px;
-		padding: 2px;
-	}
 }
-
-/***** END TVNEWS MIN-WIDTH 800PX *****/
-
-/***** START TVNEWS MIN-WIDTH 1200PX *****/
-
-@media (min-width: 1200px) {
-	iframe {
-		width: 426px;
-		height: 240px;
-	}
-}
-
-/***** END TVNEWS MIN-WIDTH 1200PX *****/
 
 /* =============================================
 
@@ -622,7 +589,7 @@ aside {
 ============================================= */
 
 #artwork-titlebar {
-	background-image: url('images/artwork-background.png');
+	background-image: url('images/artwork-background.jpg');
 }
 
 #artwork-titlebar p {
@@ -693,7 +660,7 @@ aside {
 ============================================= */
 
 #about-titlebar {
-	background-image: url('images/about-background.png');
+	background-image: url('images/about-background.jpg');
 }
 
 #about-titlebar img {

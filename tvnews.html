@@ -22,7 +22,6 @@
 
 				<!-- JQuery -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 	</head>
 
 	<body>
@@ -48,7 +47,7 @@
 			<!-- Desktop -->
 			<nav class="desktop-menu">
 				<ul>
-					<li><a href="tvnews.html">tvnews</a></li>
+					<li><a href="tvnews.html"><span class="currentpage">tvnews</span></a></li>
 					<li><a href="resume.html">resume</a></li>
 					<li><a href="index.html"><img id="logo" src="images/logo.png" alt="Ashley Siu logo" title="Ashley Siu logo"></a></li>
 					<li><a href="artwork.html">artwork</a></li>
@@ -71,25 +70,25 @@
 			<section class="tvnews-content">
 				<figure>
 					<h2>Producer Reel</h2>
-					<iframe src="https://www.youtube.com/embed/VZlZxV3CGC4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class=".mediaWrapper" src="https://www.youtube.com/embed/VZlZxV3CGC4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<figcaption>March 2020</figcaption>
 				</figure>
 
 				<figure>
 					<h2>Video for Digital</h2>
-					<iframe src="https://www.youtube.com/embed/PsHQq76ORj0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class=".mediaWrapper" src="https://www.youtube.com/embed/PsHQq76ORj0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<figcaption>March 4, 2020</figcaption>
 				</figure>
 
 				<figure>
 					<h2>Full Midday Show</h2>
-					<iframe src="https://www.youtube.com/embed/U48tGdHUfdM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class=".mediaWrapper" src="https://www.youtube.com/embed/U48tGdHUfdM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<figcaption>January 8, 2020</figcaption>
 				</figure>
 
 				<figure>
 					<h2>Prepackaged Headlines</h2>
-					<iframe src="https://www.youtube.com/embed/cKnUWjxK2B8"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class=".mediaWrapper" src="https://www.youtube.com/embed/cKnUWjxK2B8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<figcaption>September 25, 2019</figcaption>
 				</figure>
 			</section>
@@ -106,6 +105,7 @@
 
 		<!-- JavaScript -->
 		<script src="js/hamburger.js"></script>
+		<script src="js/responsive-iframe/jquery.mediaWrapper.js"></script>
 	</body>
 
 </html>
