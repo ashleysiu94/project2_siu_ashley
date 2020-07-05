@@ -18,7 +18,6 @@ body {
 	background-color: #f3f3f3;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 }
 
 header {
@@ -130,14 +129,12 @@ p {
 
 main {
 	flex: 1;
-	height: 80vh;
 	background-color: #252525;
 }
 
 .overlay {
 	background-color: rgba(34, 113, 187, .7);
 	width: 100%;
-	height: 80vh;
 }
 
 footer {
@@ -180,7 +177,6 @@ footer {
 	background-position: center;
 	background-size: cover;
 	min-height: 450px;
-	height: 80vh;
 }
 
 .home-container {
@@ -327,7 +323,6 @@ footer {
 
 #tvnews-titlebar {
 	background-image: url('images/tvnews-background.png');
-	width: 100%;
 }
 
 .titlebar {
